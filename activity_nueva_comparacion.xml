@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".nuevaComparacion">
+
+    <TextView
+        android:id="@+id/tvIndicaciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Para calcular una nueva comparacion ingrese los datos y presione calcular" />
+
+    <EditText
+        android:id="@+id/etMonto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Monto a depositar"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etPlazo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Plazo en dias"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etBanco1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre banco1"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etTasaBanco1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="TNA banco1 %"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etBanco2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre banco2"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etTasaBanco2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="TNA banco2 %"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/tvComparacionLinea1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/tvComparacionLinea2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/tvComparacionLinea3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/tvComparacionLinea4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text=""/>
+
+    <Button
+        android:id="@+id/btGrabarEnHistorico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_marginTop="20dp"
+        android:text="Grabar comparacion en historial" />
+
+    <Button
+        android:id="@+id/Calcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Realizar comparacion" />
+
+    <Button
+        android:id="@+id/btVolver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volver" />
+
+</LinearLayout>

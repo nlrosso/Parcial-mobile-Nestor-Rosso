@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TestInversor">
+
+    <TextView
+        android:id="@+id/tvInstrucciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Elija una opcion de cada uno de los grupos para finalizar el test" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="1" />
+    <TextView
+        android:id="@+id/tvPreguntaGrupo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:text="Al momento de realizar una inversión, buscas:" />
+    <RadioGroup
+        android:id="@+id/rgGrupo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <RadioButton
+            android:id="@+id/rbGrupo1Opcion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Cubrir tu capital de la inflación y/o devaluación buscando el menor riesgo posible." />
+        <RadioButton
+            android:id="@+id/rbGrupo1Opcion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Obtener un rendimiento superior a la inflación y/o devaluación aceptando arriesgar tu capital." />
+        <RadioButton
+            android:id="@+id/rbGrupo1Opcion3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Lograr un rendimiento considerablemente superior a la inflación  aceptando posibles pérdidas de capital." />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="1" />
+    <TextView
+        android:id="@+id/tvPreguntaGrupo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:text="Si tuvieras que contratar un seguro para auto, optarías por:" />
+    <RadioGroup
+        android:id="@+id/rgGrupo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <RadioButton
+            android:id="@+id/rbGrupo2Opcion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Póliza contra todo riesgo, sin importar que sea la más cara." />
+        <RadioButton
+            android:id="@+id/rbGrupo2Opcion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Póliza únicamente de seguro contra terceros." />
+        <RadioButton
+            android:id="@+id/rbGrupo2Opcion3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" No contrataría ninguna póliza si pudiera." />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="1" />
+    <TextView
+        android:id="@+id/tvPreguntaGrupo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:text="Si tu inversión se desvaloriza un 15% a tan sólo un mes de haberla adquirido, ¿Cómo procederías?" />
+    <RadioGroup
+        android:id="@+id/rgGrupo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <RadioButton
+            android:id="@+id/rbGrupo3Opcion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:text="Vendería la inversión para evitar una mayor pérdida." />
+        <RadioButton
+            android:id="@+id/rbGrupo3Opcion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:text="Esperaría que la inversión recupere su valor inicial." />
+        <RadioButton
+            android:id="@+id/rbGrupo3Opcion3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+                android:text="Compraría una mayor cantidad aprovechando que el precio actual es menor al que había pagado" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="1" />
+    <Button
+        android:id="@+id/btCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Calcular" />
+
+    <Button
+        android:id="@+id/btVolver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Volver" />
+
+</LinearLayout>
